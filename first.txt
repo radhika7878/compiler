@@ -1,0 +1,52 @@
+<program> TK_FUNID TK_MAIN
+0. <mainFunction> TK_MAIN
+0. <otherFunctions> e TK_FUNID
+0. <function> TK_FUNID 
+0. <input_par> TK_INPUT 
+0. <output_par> e TK_OUTPUT
+0. <parameter_list> TK_INT TK_REAL TK_RECORD
+0. <dataType> TK_INT TK_REAL TK_RECORD
+0. <primitiveDatatype> TK_INT TK_REAL
+0. <constructedDatatype> TK_RECORD
+0. <remaining_list> e TK_COMMA
+0. <stmts> TK_RECORD TK_TYPE TK_ID TK_WHILE TK_IF TK_READ TK_WRITE TK_SQL TK_CALL TK_RETURN
+0. <typeDefinitions> e TK_RECORD
+0. <typeDefinition> TK_RECORD 
+0. <fieldDefinitions> TK_TYPE
+0. <fieldDefinition> TK_TYPE
+0. <moreFields> e TK_TYPE
+0. <declarations> e TK_TYPE
+0. <declaration> TK_TYPE
+0. <global_or_not> e TK_COLON
+0. <otherStmts> e TK_ID TK_WHILE TK_IF TK_READ TK_WRITE TK_SQL TK_CALL
+0. <stmt> TK_ID TK_WHILE TK_IF TK_READ TK_WRITE TK_SQL TK_CALL TK_RETURN TK_ENDWHILE TK_ELSE TK_ENDIF 
+0. <assignmentStmt> TK_ID 
+0. <singleOrRecId> TK_ID
+0. <new_24> e TK_DOT
+0. <funCallStmt> TK_SQL TK_CALL
+0. <outputParameters> e TK_SQL
+0. <inputParameters> TK_SQL
+0. <iterativeStmt> TK_WHILE
+0. <conditionalStmt> TK_IF 
+0. <elsePart> TK_ELSE TK_ENDIF
+0. <ioStmt> TK_READ TK_WRITE 
+0. <allVar> TK_NUM TK_RNUM TK_ID
+0. <booleanExpression> TK_OP TK_NOT TK_ID TK_NUM TK_RNUM
+0. <var> TK_NUM TK_RNUM TK_ID
+0. <logicalOp> TK_AND TK_OR
+0. <relationalOp> TK_LT TK_LE TK_EQ TK_GE TK_GT TK_NE
+0. <returnStmt> TK_RETURN
+0. <optionalReturn> e TK_SQL
+0. <idList> TK_ID
+0. <more_ids> e TK_COMMA
+0. <arithmeticExpression> TK_OP TK_ID TK_NUM TK_RNUM 
+0. <expPrime> e TK_PLUS TK_MINUS 
+0. <term> TK_OP TK_ID TK_NUM TK_RNUM 
+0. <termPrime> e TK_MUL TK_DIV 
+0. <factor> TK_OP TK_ID TK_NUM TK_RNUM
+0. <highOperators> TK_DIV TK_MUL
+0. <lowOperators> TK_PLUS TK_MINUS
+0. <all> TK_ID TK_NUM TK_RNUM 
+0. <new_25> e TK_DOT
+0. <new_26> e TK_DOT
+0. END

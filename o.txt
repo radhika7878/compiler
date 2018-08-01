@@ -1,0 +1,7 @@
+SECTION .bss
+	buf: resw 1
+	buf_len: equ $-buf
+;
+SECTION .text
+global main
+main:

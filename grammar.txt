@@ -1,0 +1,93 @@
+<program> <otherFunctions> <mainFunction>
+0. <mainFunction> TK_MAIN <stmts> TK_END
+0. <otherFunctions> <function> <otherFunctions> 
+0. <otherFunctions> eps
+0. <function> TK_FUNID <input_par> <output_par> TK_SEM <stmts> TK_END
+0. <input_par> TK_INPUT TK_PARAMETER TK_LIST TK_SQL <parameter_list> TK_SQR
+0. <output_par> TK_OUTPUT TK_PARAMETER TK_LIST TK_SQL <parameter_list> TK_SQR
+0. <output_par> eps
+0. <parameter_list> <dataType> TK_ID <remaining_list>
+0. <dataType> <primitiveDatatype>
+0. <dataType> <constructedDatatype>
+0. <primitiveDatatype> TK_INT
+0. <primitiveDatatype> TK_REAL
+0. <constructedDatatype> TK_RECORD TK_RECORDID
+0. <remaining_list> TK_COMMA <parameter_list>
+0. <remaining_list> eps
+0. <stmts> <typeDefinitions> <declarations> <otherStmts> <returnStmt>
+0. <typeDefinitions> <typeDefinition> <typeDefinitions> 
+0. <typeDefinitions> eps
+0. <typeDefinition> TK_RECORD TK_RECORDID <fieldDefinitions> TK_ENDRECORD TK_SEM
+0. <fieldDefinitions> <fieldDefinition> <fieldDefinition> <moreFields>
+0. <fieldDefinition> TK_TYPE <primitiveDatatype> TK_COLON TK_FIELDID TK_SEM
+0. <moreFields> <fieldDefinition> <moreFields>
+0. <moreFields> eps
+0. <declarations> <declaration> <declarations> 
+0. <declarations> eps
+0. <declaration> TK_TYPE <dataType> TK_COLON TK_ID <global_or_not> TK_SEM
+0. <global_or_not> TK_COLON TK_GLOBAL
+0. <global_or_not> eps
+0. <otherStmts> <stmt> <otherStmts> 
+0. <otherStmts> eps
+0. <stmt> <assignmentStmt>
+0. <stmt> <iterativeStmt>
+0. <stmt> <conditionalStmt>
+0. <stmt> <ioStmt>
+0. <stmt> <funCallStmt> 
+0. <assignmentStmt> <singleOrRecId> TK_ASSIGNOP <arithmeticExpression> TK_SEM
+0. <singleOrRecId> TK_ID <new_24>
+0. <new_24> eps
+0. <new_24> TK_DOT TK_FIELDID
+0. <funCallStmt> <outputParameters> TK_CALL TK_FUNID TK_WITH TK_PARAMETERS <inputParameters> TK_SEM
+0. <outputParameters> TK_SQL <idList> TK_SQR TK_ASSIGNOP
+0. <outputParameters> eps
+0. <inputParameters> TK_SQL <idList> TK_SQR
+0. <iterativeStmt> TK_WHILE TK_OP <booleanExpression> TK_CL <stmt> <otherStmts> TK_ENDWHILE
+0. <conditionalStmt> TK_IF TK_OP <booleanExpression> TK_CL TK_THEN <stmt> <otherStmts> <elsePart>
+0. <elsePart> TK_ELSE <stmt> <otherStmts> TK_ENDIF
+0. <elsePart> TK_ENDIF
+0. <ioStmt> TK_READ TK_OP <singleOrRecId> TK_CL TK_SEM
+0. <ioStmt> TK_WRITE TK_OP <allVar> TK_CL TK_SEM
+0. <allVar> TK_NUM
+0. <allVar> TK_RNUM
+0. <allVar> TK_ID <new_25>
+0. <new_25> eps
+0. <new_25> TK_DOT TK_FIELDID
+0. <booleanExpression> TK_OP <booleanExpression> TK_CL <logicalOp> TK_OP <booleanExpression> TK_CL
+0. <booleanExpression> <var> <relationalOp> <var>
+0. <booleanExpression> TK_NOT TK_OP <booleanExpression> TK_CL
+0. <var> TK_ID
+0. <var> TK_NUM
+0. <var> TK_RNUM
+0. <logicalOp> TK_AND
+0. <logicalOp> TK_OR
+0. <relationalOp> TK_LT 
+0. <relationalOp> TK_LE
+0. <relationalOp> TK_EQ
+0. <relationalOp> TK_GT
+0. <relationalOp> TK_GE
+0. <relationalOp> TK_NE
+0. <returnStmt> TK_RETURN <optionalReturn> TK_SEM
+0. <optionalReturn> TK_SQL <idList> TK_SQR
+0. <optionalReturn> eps
+0. <idList> TK_ID <more_ids>
+0. <more_ids> TK_COMMA <idList>
+0. <more_ids> eps
+0. <arithmeticExpression> <term> <expPrime>
+0. <expPrime> <lowOperators> <term> <expPrime>
+0. <expPrime> eps
+0. <term> <factor> <termPrime>
+0. <termPrime> <highOperators> <factor> <termPrime>
+0. <termPrime> eps
+0. <factor> TK_OP <arithmeticExpression> TK_CL
+0. <factor> <all>
+0. <highOperators> TK_MUL
+0. <highOperators> TK_DIV
+0. <lowOperators> TK_PLUS 
+0. <lowOperators> TK_MINUS
+0. <all> TK_NUM
+0. <all> TK_RNUM
+0. <all> TK_ID <new_26>
+0. <new_26> eps
+0. <new_26> TK_DOT TK_FIELDID
+0. END
